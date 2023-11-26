@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Organization">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling</title>
+    <script src="https://kit.fontawesome.com/f2a9e35d94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- Microdata -->
+    <link itemprop="url" href="Webutvikling">
+    <meta itemprop="name" content="TB">
+    <link itemprop="sosialeMedier" href="https://www.facebook.com">
+    <link itemprop="sosialeMedier" href="https://www.instagram.com">
+    <link itemprop="sosialeMedier" href="https://www.linkedin.com">
+</head>
+<body>
+
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // https://chat.openai.com/
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <header itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <a href="index.html" itemprop="url">
+            <img src="./ressurser/logo1.png" class="footerpic" alt="Logo" itemprop="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="products.html">Portofolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="contact"><a id="spc2" href="about.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container" itemprop="Video" itemscope itemtype="http://schema.org/video">
+        <video id="background-video" autoplay muted loop itemprop="video">
+            <source src="./ressurser/mountains.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="background"></div>
+        <h1 itemprop="headline">Compelling headline</h1>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing liqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <a id="spc2" href="#section3">Read more about our services</a>
+        </article>
+    </div>
+
+    <main itemprop="mainContentOfPage">
+        <section id="section1" itemprop="description" itemscope itemtype="http://schema.org/Description">
+            <h2 itemprop="headline">Engaging subheading. What can you help your visitors with</h2>
+            <article itemprop="description">
+                <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </article>
+        </section>
+
+        <section id="section2">
+            <article class="box1" itemprop="Box">
+                <h2 class="y" itemprop="headline">400 x 400</h2>
+            </article>
+            <article itemprop="About">
+                <h3 class="i" itemprop="headline">About our company</h3>
+                <p class="p1" itemprop="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a id="spc" href="about.html">Read more about us</a>
+            </article>
+        </section>
+        
+        <section id="section3" >
+            <h2 itemprop="headline">Our services</h2>
+            <article>
+                <i class="fas fa-users fa-2x"></i> 
+                <h4 itemprop="headline">Branding</h4>
+                <p id="i" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <i class="fas fa-cloud fa-2x"></i>
+                <h4 itemprop="headline">Branding</h4>
+                <p id="i" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <i class="fas fa-code fa-2x"></i>
+                <h4 itemprop="headline">Branding</h4>
+                <p id="i" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article >
+                <i class="fas fa-wifi fa-2x"></i>
+                <h4 itemprop="headline">Branding</h4>
+                <p id="i" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+        </section>
+        <section id="section4">
+            <h2 itemprop="headline">Sign up for our news letter</h2>
+            <form class="ff">
+                <input class="input" type="text" id="username" name="username" placeholder="tb@gmail.com">
+                <a id="spc2" href="#section1">Sign me up!</a>
+            </form>
+        </section>
+    </main>
+
+    <footer itemprop="Footer">
+        <a href="index.html" itemprop="url">
+            <img src="./ressurser/logo1.png" class="footerpic" alt="Bedrift Logo" itemprop="logo">
+        </a>
+        <p id="f">Companyrights Companyname 2023</p>
+
+        <ul class="footer-liste">
+            <li>
+                <a href="https://www.facebook.com" class="ikon"  itemprop="url">
+                    <i class="fab fa-android fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" class="ikon"  itemprop="url">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" class="ikon"  itemprop="url">
+                    <i class="fab fa-vimeo fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/f2a9e35d94.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // https://chat.openai.com/
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+    <header>
+        <a href="index.html" >
+            <img src="./ressurser/logo1.png" class="footerpic" alt="Bedrift Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="products.html">Portofolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="contact"><a id="spc2" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="bg"></div>
+        <article class="article">
+            <section class="d1">
+            <p class="cc1">
+                Company name
+            </p>
+            <h3 class="h3">About our company</h3>
+            <p class="cc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing liqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            </section>
+            <a id="spc21" href="#contact">Get in touch with us</a>
+        </article>
+    </div>
+
+    <main>
+        <section id="section3">
+            <h2>Our services</h2>
+            <article>
+                <i class="fas fa-users fa-2x"></i> 
+                <h4>Branding</h4>
+                <p id="i">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <i class="fas fa-cloud fa-2x"></i>
+                <h4>Branding</h4>
+                <p id="i">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <i class="fas fa-code fa-2x"></i>
+                <h4>Branding</h4>
+                <p id="i">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <i class="fas fa-wifi fa-2x"></i>
+                <h4>Branding</h4>
+                <p id="i">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+        </section>
+
+        <section class="clients">
+            <h2>Some of our clients</h2>
+            <article>
+                <img class="cl" src="./ressurser/logo1.png" alt="clients"> 
+            </article>
+            <article>
+                <img class="cl" src="./ressurser/logo2.png" alt="clients">
+            </article>
+            <article>
+                <img class="cl" src="./ressurser/logo3.png" alt="clients">
+            </article>
+        </section>
+        <h2 class="h2">Contact us</h2>
+        <section class="contact-section" id="contact">
+            <form class="form">
+                <h4>Send us a message</h4>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Ola Nordmann...">
+    
+                <label for="subject">Subject</label>
+                <input type="subject" id="subject" name="subject" placeholder="Subject...">
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
+                <a id="spc2" href="about.html#contact">Send Message</a>
+            </form>
+    
+            <div class="right-section">
+                <h4 class="h4">Contact information</h4>
+                <p class="p">Lorem ipsum dolor sit amet, deserunt mollit anim id est laborum Excepteur sint occaecat cupidatat non proident,consectetur adipiscing elit. Nullam eget turpis ac leo vehicula semper.</p>
+    
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>Høgskolen i Østfold</li>
+                    <li><i class="fas fa-phone"></i>+47 95887651</li>
+                    <li><i class="fas fa-envelope"></i> <a href="">tb@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433552!2d11.35022837627428!3d59.129250227021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700528223118!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+        <footer>
+            <a href="index.html" >
+                <img src="./ressurser/logo1.png" class="footerpic" alt="Your Logo">
+            </a>
+            <p id="f">Companyrights Companyname 2023</p>
+
+            <ul class="footer-liste">
+                <li>
+                    <a href="https://www.facebook.com" class="ikon"  itemprop="url">
+                        <i class="fab fa-android fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" class="ikon"  itemprop="url">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" class="ikon"  itemprop="url">
+                        <i class="fab fa-vimeo fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        </footer>
+    </main>
+
+</body>
+</html>
